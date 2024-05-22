@@ -1,0 +1,94 @@
+@media only screen and (min-width: 375px) {
+body, html {
+    background-color: tomato;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Обязательно для Flexbox */
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-image: url(https://i.pinimg.com/originals/7a/76/de/7a76de5b83a67c977e7cd8ef0df4ddab.jpg);
+    background-size: block;
+    display: flex;
+    background-color: blue;
+    margin: 0px;
+    padding: 0px;
+    height: 300px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    text-transform:uppercase;
+    background: #1d6600;
+    display:table;
+    margin: 120px auto;
+    color: rgb(255, 0, 0);
+    border-radius: 5px;
+    padding: 5px 10px;
+    align-items:center;
+    justify-content: center;
+}
+
+main {
+    background-image: url(https://t3.ftcdn.net/jpg/01/27/24/52/360_F_127245287_waaLzWAcEaot9hP4tCohjWNb6OsbanyM.jpg);
+    /* background-size: cover; */
+    display: flex;
+    flex: 1; /* Основное содержимое занимает все оставшееся пространство */
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    background: rgb(255, 254, 254, 0.9); /* Полупрозрачная подкладка */
+    padding: 10px;
+    margin: 25px;
+    border-radius: 5px;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    padding: 10px;
+}
+
+a[href^='mailto']::before {
+content: '📧';
+}
+
+a[href^='tel']::before {
+content: '📱 ';
+}
+
+footer {
+    background-image: url(https://i.pinimg.com/originals/7a/76/de/7a76de5b83a67c977e7cd8ef0df4ddab.jpg);
+    background-size: block;
+    display: flex;
+    padding: 0px;
+    height: 300px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h1{
+    text-transform:uppercase;
+    background: #1d6600;
+    display:table;
+    margin: 120px auto;
+    color: rgb(255, 0, 0);
+    border-radius: 5px;
+    padding: 5px 10px;
+    align-items: center;
+    justify-content: center;
+}}
